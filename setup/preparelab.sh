@@ -346,8 +346,9 @@ spec:
   channel: stable
   installPlanApproval: Automatic
   name: strimzi-kafka-operator
-  source: installed-community-openshift-operators
-  sourceNamespace: openshift-operators
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: amqstreams.v1.3.0
 EOF
 
 # Build stack
