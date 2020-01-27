@@ -157,11 +157,12 @@ metadata:
     csc-owner-name: installed-redhat-che
     csc-owner-namespace: openshift-marketplace
 spec:
-  channel: final
+  channel: latest
   installPlanApproval: Automatic
   name: codeready-workspaces
-  source: installed-redhat-che
-  sourceNamespace: che
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: crwoperator.v2.0.0
 EOF
 
 # Wait for checluster to be a thing
